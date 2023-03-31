@@ -80,6 +80,12 @@
     font-weight: bold;;
 }
 
+.imagemCentralLogo {
+    width: 200px;
+    height: 200px;
+    
+  }
+
 @media (max-width: 768px) {
     .title{
         font-size: 60px;
