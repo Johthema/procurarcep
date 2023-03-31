@@ -58,7 +58,7 @@ function App() {
         {/* Titulo do projeto */}
         <div className="container">
           <img src={map2} alt="imagemCentral" className="imagemCentralLogo"/>
-          <h1 className="title">Buscador de CEP da região de Manaus</h1>
+          <h1 className="title">Buscador de endereço da região</h1>
         
         {/*Caixa de busca*/}
         <div className="containerInput">
