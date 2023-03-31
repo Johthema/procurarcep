@@ -4,6 +4,7 @@ import { MdOutlineStreetview } from "react-icons/md";
 import { FaCity } from "react-icons/fa";
 import { FaStreetView } from "react-icons/fa";
 import api from './services/api.js';
+import map2 from "../src/map2.png";
 import './style.css';
 
 //[[Informações necessarias]]
@@ -56,6 +57,7 @@ function App() {
       <main>
         {/* Titulo do projeto */}
         <div className="container">
+          <img src={map2} alt="imagemCentral" className="imagemCentralLogo"/>
           <h1 className="title">Buscador de CEP da região de Manaus</h1>
         
         {/*Caixa de busca*/}
