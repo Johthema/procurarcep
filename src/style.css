@@ -22,6 +22,7 @@
     
 }
 
+
 .containerInput{
     display: flex;
     background-color: rgb(255, 255, 255, 0.2);
@@ -80,11 +81,24 @@
     font-weight: bold;;
 }
 
-.imagemCentralLogo {
+.imagemCentralLogo{
     width: 200px;
     height: 200px;
+    animation: animaLogo 2s;
     
   }
+
+/* @keyframes animaLogo {
+    from{
+        
+        position: absolute;
+        margin-top: 40px;
+    } to {
+        position: absolute;
+        margin-top: -200px;
+    }
+    
+} */
 
 @media (max-width: 768px) {
     .title{
