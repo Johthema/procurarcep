@@ -17,7 +17,7 @@
     background: linear-gradient(#121212, #263e2c)
 }
 .title{
-    font-size: 80px;
+    font-size: 50px;
     color: #fff;
     animation: flipAnimacao 1s;
 }
@@ -118,12 +118,18 @@
 
 @media (max-width: 768px) {
     .title{
-        font-size: 60px;
+        font-size: 40px;
     }
     .main2{
         width: 80%;
     }
     .main2 h2{
         font-size: 28px;
+    }
+    .mainPrincipal{
+        display: contents;
+    }
+    .container{
+        width: 100%;
     }
 }
