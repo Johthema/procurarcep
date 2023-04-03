@@ -3,20 +3,33 @@ import { GoSearch } from "react-icons/go";
 import { MdOutlineStreetview } from "react-icons/md";
 import { FaCity } from "react-icons/fa";
 import { FaStreetView } from "react-icons/fa";
+// import { LoadScript } from '@react-google-maps/api';
+import GoogleMapReact from 'google-map-react';
+
+//Importação de imagens e estilo
 import api from './services/api.js';
 import map2 from "../src/map2.png";
 import './style.css';
 
 //[[Informações necessarias]]
-//Api para buscar cep: https://viacep.com.br/ws/69060101/json/
 
 function App() {
 
 
   const [cep, setInput] = useState("");
+  const [cepRe, setCep] = useState ({});
+  //Google maps
+  const AnyReactComponent = ({ text }) => <div>{text}</div>;
+  const defaultProps = {
+    center: {
+      lat: -3.0779914,
+      lng: -59.9861152
+    },
+    zoom: 12.5
+  };
+  //Latitude longitude
+  
 
-// eslint-disable-next-line no-unused-vars
-  const [cepRe, setCep] = useState ({})
 //----------------------------------Escopo das Funções
     async function funcaoAlerta(){
        console.log("O cep passado é: ", cep)
@@ -80,8 +93,22 @@ function App() {
         )}
 
         </div>
-        <div className="divMapa ladoAlado">
-
+        <div className="divMapa ladoAlado" style={{ height: '100vh', width: '100%' }}>
+      
+        
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: "" }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+      >
+        <AnyReactComponent
+          lat={59.955413}
+          lng={30.337844}
+         
+        />
+      </GoogleMapReact>
+    
+    
         </div>
       </main>
   );
