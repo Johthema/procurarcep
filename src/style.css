@@ -1,6 +1,15 @@
 
+.mainPrincipal{
+    display: flex;
+}
+
+.ladoAlado{
+    display: inline-block;
+}
+
 .container{
     height: 100vh;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +70,7 @@
     
 }
 
-.main{
+.main2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,12 +80,12 @@
     border-radius: 8px
 }
 
-.main h2{
+.main2 h2{
     margin: 16px 0;
     font-size: 39px
 }
 
-.main span{
+.main2 span{
     margin-bottom: 16px;
     font-weight: bold;;
 }
@@ -99,15 +108,22 @@
     }
     
 } */
+.divMapa{
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    background-color:#aaaaaa;
+    position: relative;
+}
 
 @media (max-width: 768px) {
     .title{
         font-size: 60px;
     }
-    .main{
+    .main2{
         width: 80%;
     }
-    .main h2{
+    .main2 h2{
         font-size: 28px;
     }
 }

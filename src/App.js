@@ -54,9 +54,9 @@ function App() {
 //----------------------------------Corpo da pagina componente principal
   return (
   
-      <main>
+      <main className="mainPrincipal">
         {/* Titulo do projeto */}
-        <div className="container">
+        <div className="container ladoAlado">
           <img src={map2} alt="imagemCentral" className="imagemCentralLogo"/>
           <h1 className="title">Buscador de endereço da região</h1>
         
@@ -70,7 +70,7 @@ function App() {
         {/*Resposta da solicitação*/}
 
         {Object.keys(cepRe).length > 0 && ( //Verifica se existe dados dentro do cepRe
-          <main className="main">
+          <main className="main2">
             <h2>CEP: {cepRe.cep}</h2>
             <span><FaStreetView size={25} color="#000"/> Rua: {cepRe.logradouro} </span>
             <span><MdOutlineStreetview size={25} color="#000"/> Bairro: {cepRe.bairro}</span>
@@ -78,6 +78,9 @@ function App() {
           </main>
       
         )}
+
+        </div>
+        <div className="divMapa ladoAlado">
 
         </div>
       </main>
